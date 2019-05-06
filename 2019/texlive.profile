@@ -1,4 +1,4 @@
-selected_scheme scheme-infraonly
+selected_scheme scheme-full
 TEXDIR /usr/local/texlive/2019
 TEXMFCONFIG ~/.texlive2019/texmf-config
 TEXMFHOME ~/texmf
