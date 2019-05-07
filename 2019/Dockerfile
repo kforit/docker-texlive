@@ -7,7 +7,7 @@ WORKDIR /texlive_install
 
 COPY texlive.profile .
 
-RUN apk add --no-cache -U -u wget p7zip perl \
+RUN apk add --no-cache -U -u wget p7zip perl build-base \
  && wget -qO texlive.iso $TL_ISO \
  && 7z x texlive.iso > /dev/null \
  && rm -f texlive.iso \
