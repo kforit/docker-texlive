@@ -6,6 +6,6 @@ TEXMFLOCAL /usr/local/texlive/texmf-local
 TEXMFSYSCONFIG /usr/local/texlive/2019/texmf-config
 TEXMFSYSVAR /usr/local/texlive/2019/texmf-var
 TEXMFVAR ~/.texlive2019/texmf-var
-binary_x86_64-linuxmusl 1
+binary_x86_64-linux 1
 instopt_adjustpath 1
 instopt_adjustrepo 0
