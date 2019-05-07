@@ -1,13 +1,13 @@
-FROM alpine
+FROM debian
 
-ARG TL_ISO=ftp://tug.org/texlive/historic/2018/texlive2018.iso
+ARG TL_ISO=https://lite.kgt.app/rd/tl2018iso
 ARG TL_REPOSITORY=ftp://tug.org/historic/systems/texlive/2018/tlnet-final
 
 WORKDIR /texlive_install
 
 COPY texlive.profile .
 
-RUN apk add --no-cache -U -u wget p7zip perl \
+RUN apt update && apt install -y wget curl perl-tk p7zip-full \
  && wget -qO texlive.iso $TL_ISO \
  && 7z x texlive.iso > /dev/null \
  && rm -f texlive.iso \
