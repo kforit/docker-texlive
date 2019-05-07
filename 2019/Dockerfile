@@ -9,6 +9,7 @@ COPY texlive.profile .
 RUN apk add --no-cache -U -u wget p7zip perl \
  && wget -O texlive.iso $TL_ISO \
  && 7z -x texlive.iso \
+ && rm -f texlive.iso \
  && ./install-tl -profile texlive.profile \
  && rm -rf ./*
 
