@@ -1,6 +1,6 @@
 FROM debian
 
-ARG TL_ISO=https://lite.kgt.app/rd/tl2019iso
+ENV TL_ISO=https://mirrors.aliyun.com/CTAN/systems/texlive/Images/texlive2019.iso
 
 WORKDIR /texlive_install
 
